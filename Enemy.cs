@@ -31,6 +31,11 @@ namespace DemoClasse
             return $"I am a {Name} I have {Attack} Attack point, {Health} Health point and {Defense} defense. I love the {FavoriteBiome}";
         }
 
+        public Task<string?>? Test()
+        {
+            return await Task.Run( () => Console.ReadLine() );            
+        }
+
         public static List<Enemy> InitList()
         {
             List<Enemy> enemies = new List<Enemy>();
