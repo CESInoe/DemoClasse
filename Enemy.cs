@@ -33,7 +33,7 @@ namespace DemoClasse
 
         public Task<string?>? Test()
         {
-            return await Task.Run( () => Console.ReadLine() );            
+            return Task.Run( () => Console.ReadLine() );            
         }
 
         public static List<Enemy> InitList()
